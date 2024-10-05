@@ -18,6 +18,14 @@ func NewGame(snake *snake, ladder *ladder, names []string) *game {
 	}
 }
 
+// Play start the game, each player take turn to throw a dice,
+// and move the position accordingly. If the player land on a snake,
+// the player position will be changed to the snake end position.
+// If the player land on a ladder, the player position will be changed
+// to the ladder end position. If the player position exceed 100, the
+// player will stay in the same position. The game will end when all
+// player reach the position 100.
+
 func (g *game) Play() {
 	totalPlayer := len(g.player)
 	win := 0

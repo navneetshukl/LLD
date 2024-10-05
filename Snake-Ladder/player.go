@@ -22,3 +22,7 @@ func (p *player) DiceThrow() int {
 	val := rand.Intn(6)
 	return val+1
 }
+
+func(p *player)SetPosition(pos int){
+	p.Position = pos
+}

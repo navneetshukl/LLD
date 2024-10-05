@@ -41,7 +41,8 @@ func (g *game) Play() {
 		// check if snake
 		snakePos := currentPlayer.snake.IsSnake(nextPos)
 		if snakePos != -1 {
-			currentPlayer.Position = snakePos
+			//currentPlayer.Position = snakePos
+			currentPlayer.SetPosition(snakePos)
 			continue
 		}
 
@@ -49,7 +50,8 @@ func (g *game) Play() {
 
 		ladderPos := currentPlayer.ladder.IsLadder(nextPos)
 		if ladderPos != -1 {
-			currentPlayer.Position = ladderPos
+			//currentPlayer.Position = ladderPos
+			currentPlayer.SetPosition(ladderPos)
 		}
 
 		if currentPlayer.Position == 100 {

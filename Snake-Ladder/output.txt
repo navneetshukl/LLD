@@ -1,0 +1,87 @@
+PS D:\LLD\Snake-Ladder> go run all
+Enter the total number of snakes.
+9
+Enter the starting and ending position for snakes (e.g., 14 7).
+62 5
+33 6
+49 9
+88 16
+41 20
+56 53
+98 64
+93 73
+95 75
+Enter the total number of ladders.
+8
+Enter the starting and ending position for ladders (e.g., 3 22).
+2 37
+27 46
+10 32
+51 68
+61 79
+65 84
+71 91
+81 100
+Enter the total number of players.
+2
+Enter the names of the players.
+Gaurav
+Sagar
+2024/10/06 15:33:36 Gaurav rolled a 2 and moved to position 37
+2024/10/06 15:33:36 Sagar rolled a 3 and moved to position 3
+2024/10/06 15:33:36 Gaurav rolled a 1 and moved to position 38
+2024/10/06 15:33:36 Sagar rolled a 2 and moved to position 5
+2024/10/06 15:33:36 Gaurav rolled a 3 and moved to position 20
+2024/10/06 15:33:36 Sagar rolled a 6 and moved to position 11
+2024/10/06 15:33:36 Gaurav rolled a 3 and moved to position 23
+2024/10/06 15:33:36 Sagar rolled a 5 and moved to position 16
+2024/10/06 15:33:36 Gaurav rolled a 3 and moved to position 26
+2024/10/06 15:33:36 Sagar rolled a 2 and moved to position 18
+2024/10/06 15:33:36 Gaurav rolled a 2 and moved to position 28
+2024/10/06 15:33:36 Sagar rolled a 4 and moved to position 22
+2024/10/06 15:33:36 Gaurav rolled a 6 and moved to position 34
+2024/10/06 15:33:36 Sagar rolled a 2 and moved to position 24
+2024/10/06 15:33:36 Gaurav rolled a 1 and moved to position 35
+2024/10/06 15:33:36 Sagar rolled a 2 and moved to position 26
+2024/10/06 15:33:36 Gaurav rolled a 1 and moved to position 36
+2024/10/06 15:33:36 Sagar rolled a 5 and moved to position 31
+2024/10/06 15:33:36 Gaurav rolled a 1 and moved to position 37
+2024/10/06 15:33:36 Sagar rolled a 2 and moved to position 6
+2024/10/06 15:33:36 Gaurav rolled a 1 and moved to position 38
+2024/10/06 15:33:36 Sagar rolled a 4 and moved to position 32
+2024/10/06 15:33:36 Gaurav rolled a 2 and moved to position 40
+2024/10/06 15:33:36 Sagar rolled a 3 and moved to position 35
+2024/10/06 15:33:36 Gaurav rolled a 6 and moved to position 46
+2024/10/06 15:33:36 Sagar rolled a 3 and moved to position 38
+2024/10/06 15:33:36 Gaurav rolled a 5 and moved to position 68
+2024/10/06 15:33:36 Sagar rolled a 5 and moved to position 43
+2024/10/06 15:33:36 Gaurav rolled a 4 and moved to position 72
+2024/10/06 15:33:36 Sagar rolled a 6 and moved to position 9
+2024/10/06 15:33:36 Gaurav rolled a 1 and moved to position 73
+2024/10/06 15:33:36 Sagar rolled a 2 and moved to position 11
+2024/10/06 15:33:36 Gaurav rolled a 2 and moved to position 75
+2024/10/06 15:33:36 Sagar rolled a 5 and moved to position 16
+2024/10/06 15:33:36 Gaurav rolled a 5 and moved to position 80
+2024/10/06 15:33:36 Sagar rolled a 4 and moved to position 20
+2024/10/06 15:33:36 Gaurav rolled a 6 and moved to position 86
+2024/10/06 15:33:36 Sagar rolled a 2 and moved to position 22
+2024/10/06 15:33:36 Gaurav rolled a 1 and moved to position 87
+2024/10/06 15:33:36 Sagar rolled a 6 and moved to position 28
+2024/10/06 15:33:36 Gaurav rolled a 6 and moved to position 73
+2024/10/06 15:33:36 Sagar rolled a 5 and moved to position 6
+2024/10/06 15:33:36 Gaurav rolled a 1 and moved to position 74
+2024/10/06 15:33:36 Sagar rolled a 4 and moved to position 32
+2024/10/06 15:33:36 Gaurav rolled a 1 and moved to position 75
+2024/10/06 15:33:36 Sagar rolled a 3 and moved to position 35
+2024/10/06 15:33:36 Gaurav rolled a 5 and moved to position 80
+2024/10/06 15:33:36 Sagar rolled a 1 and moved to position 36
+2024/10/06 15:33:36 Gaurav rolled a 1 and moved to position 100
+2024/10/06 15:33:36 Gaurav win !
+2024/10/06 15:33:36 Sagar rolled a 1 and moved to position 37
+2024/10/06 15:33:36 Sagar rolled a 5 and moved to position 42
+2024/10/06 15:33:36 Sagar rolled a 3 and moved to position 45
+2024/10/06 15:33:36 Sagar rolled a 6 and moved to position 68
+2024/10/06 15:33:36 Sagar rolled a 4 and moved to position 72
+2024/10/06 15:33:36 Sagar rolled a 6 and moved to position 78
+2024/10/06 15:33:36 Sagar rolled a 3 and moved to position 100
+2024/10/06 15:33:36 Sagar win !

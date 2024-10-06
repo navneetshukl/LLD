@@ -42,21 +42,21 @@ func (g *game) Play() {
 			idx++
 			continue
 		}
-		pos:=currentPlayer.Position
+		pos:=nextPos
 
 		// check if snake
 		snakePos := g.snake.IsSnake(nextPos)
 		if snakePos != -1 {
-			pos+=snakePos
+			pos=snakePos
 		}
 
 		// check if ladder
 
 		ladderPos := g.ladder.IsLadder(nextPos)
 		if ladderPos != -1 {
-			pos+=ladderPos
+			pos=ladderPos
 		}
-		log.Printf("%s rolled a dice and moved to position %d\n",currentPlayer.Name,pos)
+		log.Printf("%s rolled a %d and moved to position %d\n",currentPlayer.Name,diceResult,pos)
 		currentPlayer.SetPosition(pos)
 
 
@@ -67,6 +67,7 @@ func (g *game) Play() {
 		}
 		if win == totalPlayer {
 			break
+			
 		}
 		idx++
 

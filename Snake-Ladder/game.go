@@ -4,17 +4,21 @@ import "log"
 
 type game struct {
 	player []*player
+	snake  *snake
+	ladder *ladder
 }
 
 func NewGame(snake *snake, ladder *ladder, names []string) *game {
 	players := []*player{}
 	for _, val := range names {
-		pl := NewPlayer(val, snake, ladder)
+		pl := NewPlayer(val)
 		players = append(players, pl)
 	}
 
 	return &game{
 		player: players,
+		snake:  snake,
+		ladder: ladder,
 	}
 }
 
@@ -34,34 +38,34 @@ func (g *game) Play() {
 		currentPlayer := g.player[idx%totalPlayer]
 		diceResult := currentPlayer.DiceThrow()
 		nextPos := currentPlayer.Position + diceResult
-		if nextPos > 100 {
+		if nextPos > 100 || currentPlayer.IsWin {
+			idx++
 			continue
 		}
+		pos:=currentPlayer.Position
 
 		// check if snake
-		snakePos := currentPlayer.snake.IsSnake(nextPos)
+		snakePos := g.snake.IsSnake(nextPos)
 		if snakePos != -1 {
-			//currentPlayer.Position = snakePos
-			currentPlayer.SetPosition(snakePos)
-			continue
+			pos+=snakePos
 		}
 
 		// check if ladder
 
-		ladderPos := currentPlayer.ladder.IsLadder(nextPos)
+		ladderPos := g.ladder.IsLadder(nextPos)
 		if ladderPos != -1 {
-			//currentPlayer.Position = ladderPos
-			currentPlayer.SetPosition(ladderPos)
+			pos+=ladderPos
 		}
+		log.Printf("%s rolled a dice and moved to position %d\n",currentPlayer.Name,pos)
+		currentPlayer.SetPosition(pos)
+
 
 		if currentPlayer.Position == 100 {
 			win++
+			currentPlayer.IsWin = true
 			log.Printf("%s win !\n", currentPlayer.Name)
-		} else{
-
-		log.Printf("%s current position is %d !\n",currentPlayer.Name,currentPlayer.Position)
 		}
-		if win==totalPlayer{
+		if win == totalPlayer {
 			break
 		}
 		idx++

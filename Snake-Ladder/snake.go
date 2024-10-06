@@ -4,19 +4,17 @@ type snake struct {
 	positions map[int]int
 }
 
-func NewSnake(n int) *snake {
+func NewSnake(n int,positions map[int]int) *snake {
 	mp := make(map[int]int, n)
+	for k, v := range positions {
+		mp[k] = v
+
+	}
 	return &snake{
 		positions: mp,
 	}
 }
 
-func (sn *snake) FillSnakePosition(mp map[int]int) {
-	for k, v := range mp {
-		sn.positions[k] = v
-
-	}
-}
 
 func (sn *snake) IsSnake(pos int) int {
 	val, ok := sn.positions[pos]
@@ -25,8 +23,3 @@ func (sn *snake) IsSnake(pos int) int {
 	}
 	return val
 }
-
-// type LadderSvc interface{
-// 	FillladderPosition(mp map[int]int)
-// 	IsLadder(pos int) int
-// }
